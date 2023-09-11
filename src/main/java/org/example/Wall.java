@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 @Getter
 @AllArgsConstructor
-public class Wall extends Parent{
+public class Wall{
     public int height;
 
 

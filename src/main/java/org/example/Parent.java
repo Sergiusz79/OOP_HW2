@@ -1,7 +1,9 @@
 package org.example;
 
 public abstract class Parent {
-String type;
+protected String type;
+protected Integer speedRun;
+protected Integer highJump;
 
     abstract void run();
     abstract void jump();
