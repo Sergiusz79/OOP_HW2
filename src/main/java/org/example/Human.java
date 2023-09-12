@@ -1,7 +1,7 @@
 package org.example;
 
 import lombok.Getter;
-
+@Getter
 public class Human extends Parent {
 
     protected Human (String type, Integer lengthRun, Integer highJump) {
