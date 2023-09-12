@@ -2,23 +2,19 @@ package org.example;
 
 import lombok.Getter;
 
-@Getter
+//@Getter
 public class Robot extends Parent {
 
-    protected Robot (String type, Integer speedRun, Integer highJump) {
+    protected Robot (String type, Integer lengthRun, Integer highJump) {
         super.type = type;
-        super.speedRun = speedRun;
+        super.lengthRun = lengthRun;
         super.highJump = highJump;
 
     }
 
     @Override
-    void run() {
-        System.out.println(this.type + " run!");
-    }
-
-    @Override //Ctrl+O
-    void jump() {
-        System.out.println(this.type + " is jumping!");
+    public void hallo() {
+        System.out.println("Hallo! I am " + this.type);
     }
 }
+

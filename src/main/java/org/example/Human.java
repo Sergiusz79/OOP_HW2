@@ -4,19 +4,15 @@ import lombok.Getter;
 @Getter
 public class Human extends Parent {
 
-    protected Human (String type, Integer speedRun, Integer highJump) {
+    protected Human (String type, Integer lengthRun, Integer highJump) {
         super.type = type;
-        super.speedRun = speedRun;
+        super.lengthRun = lengthRun;
         super.highJump = highJump;
     }
 
     @Override
-    void run() {
-        System.out.println(this.type + " run!");
+    public void hallo() {
+        System.out.println("Hallo! I am " + this.type);
     }
 
-    @Override //Ctrl+O
-    void jump() {
-        System.out.println(this.type + " is jumping!");
-    }
 }

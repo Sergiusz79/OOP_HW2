@@ -1,11 +1,19 @@
 package org.example;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-@Getter
-@AllArgsConstructor
-public class Wall{
-    public int height;
+
+public class Wall extends Obstacles{
+
+    public Wall(String type, Integer height) {
+        super.type = type;
+        super.height = height;
+    }
 
 
+
+    @Override
+    public String toString() {
+        return "Wall{" +
+                "height=" + height +
+                '}';
+    }
 }
