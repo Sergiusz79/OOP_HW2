@@ -5,7 +5,6 @@ public abstract class Obstacles {
     protected Integer length;
     protected Integer height;
 
-//    @Override
-//    public String toString()
+
 
 }

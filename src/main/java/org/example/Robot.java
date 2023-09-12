@@ -1,5 +1,7 @@
 package org.example;
 
+import lombok.Getter;
+@Getter
 public class Robot extends Parent {
 
     protected Robot (String type, Integer lengthRun, Integer highJump) {
